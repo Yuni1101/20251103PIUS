@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+/* iframe (測驗系統) 樣式 */
+#content-frame {
+  display: none; /* 由 script 控制顯示 */
+  position: fixed;
+  left: 15%;
+  top: 7.5%;
+  width: 70%;
+  height: 85%;
+  border: none;
+  background: #fff;
+  z-index: 999;
+}
+
+/* 小螢幕時改為全螢幕覆蓋 */
+@media (max-width: 700px) {
+  #content-frame {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
